@@ -1,0 +1,9 @@
+package-as: KRaidFade
+
+manual-changelog: ChangeLog.txt
+
+license-output: License
+
+ignore:
+    - .vscode
+    - .release*

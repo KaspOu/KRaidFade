@@ -1,0 +1,44 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Include file="OptionsRaidFade.lua" />
+	<Frame name="KFOptionsRaidFade" virtual="true">
+		<Size x="550" y="180" />
+		<Frames>
+			<CheckButton parentKey="LabelRaidFade" inherits="KFUI_HeadingWidget">
+				<Anchors>
+					<Anchor point="TOP" relativeKey="$parent" relativePoint="TOP"><Offset x="0" y="0" /></Anchor>
+				</Anchors>
+				<Attributes>
+					<Attribute name="text" value="OPTION_RAIDFADE_HEADER" />
+					<Attribute name="paddingRight" value="30" />
+				</Attributes>
+			</CheckButton>
+
+			<Slider parentKey="AlphaNotInRange" inherits="KFUI_SliderWidget" minValue="0" maxValue="100" valueStep="1" stepsPerPage="1" obeyStepOnDrag="false">
+				<Size x="200" y="15" />
+				<Attributes>
+					<Attribute name="text" value="OPTION_NOTINRANGE" />
+					<Attribute name="tooltip" value="OPTION_NOTINRANGE_TOOLTIP" />
+					<Attribute name="format" value="%d %%" />
+					<Attribute name="default" value="55" />
+				</Attributes>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.LabelRaidFade" relativePoint="BOTTOMLEFT"><Offset x="0" y="-20" /></Anchor>
+				</Anchors>
+			</Slider>
+			<Slider parentKey="AlphaNotInCombat" inherits="KFUI_SliderWidget" minValue="0" maxValue="100" valueStep="1" stepsPerPage="1" obeyStepOnDrag="false">
+				<Size x="200" y="15" />
+				<Attributes>
+					<Attribute name="text" value="OPTION_NOTINCOMBAT" />
+					<Attribute name="tooltip" value="OPTION_NOTINCOMBAT_TOOLTIP" />
+					<Attribute name="format" value="%d %%" />
+					<Attribute name="default" value="100" />
+				</Attributes>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.AlphaNotInRange" relativePoint="BOTTOMLEFT"><Offset x="0" y="-20" /></Anchor>
+				</Anchors>
+			</Slider>
+
+		</Frames>
+	</Frame>
+</Ui>

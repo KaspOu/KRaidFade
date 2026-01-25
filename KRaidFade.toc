@@ -1,0 +1,40 @@
+## Interface: 120000, 120001, 110205, 110207, 50502, 38000, 20505, 11508
+## Title: |cff00ff00K|r Raid Fade
+## Title-frFR: |cff00ff00K|r Raid Fade
+## Notes:      Fade Raid frames, out of range / out of combat
+## Notes-frFR: Change la transparence des cadres de raid, hors de portée / hors de combat.
+## Notes-deDE: Ändert die Transparenz der Schlachtzugsfenster, außer Reichweite / außerhalb des Kampfes.
+## Notes-esES: Cambia la transparencia de los marcos de banda, fuera de alcance / fuera de combate.
+## Notes-esMX: Cambia la transparencia de los marcos de banda, fuera de alcance / fuera de combate.
+## Notes-itIT: Cambia la trasparenza dei riquadri del raid, fuori portata / fuori combattimento.
+## Notes-ptBR: Altera a transparência dos quadros de raide, fora de alcance / fora de combate.
+## Notes-ruRU: Изменяет прозрачность рейдовых фреймов, вне зоны действия / вне боя.
+## Notes-koKR: 공격대 프레임의 투명도를 변경합니다, 사거리 밖 / 전투 외.
+## Notes-zhCN: 改变团队框架的透明度，超出范围 / 脱离战斗。
+## Notes-zhTW: 改變團隊框架的透明度，超出範圍 / 脫離戰鬥。
+
+## Version: 12.0.001
+## Author: Kallye of Elune
+## LoadSavedVariablesFirst: 1
+## SavedVariables: KRaidFadeOptions
+## IconTexture: Interface\AddOns\KRaidFade\Logo32
+
+## X-Category: Raid Frames, Unit Frames, Healer, Combat
+## X-Localizations: enUS, frFR, ruRU, deDE, esES, esMX, itIT, koKR, ptBR, zhCN, zhTW
+## X-License: All Rights Reserved
+## X-Website: https://github.com/KaspOu/KRaidFade/
+## X-Curse-Project-ID: 1443807
+
+Core\KRaidFade.globals.lua
+Core\localization.en.lua
+Core\localization.fr.lua [AllowLoadTextLocale frFR]
+Core\localization.de.lua [AllowLoadTextLocale deDE]
+Core\localization.es.lua [AllowLoadTextLocale esES, esMX]
+Core\localization.it.lua [AllowLoadTextLocale itIT]
+Core\localization.ko.lua [AllowLoadTextLocale koKR]
+Core\localization.pt.lua [AllowLoadTextLocale ptBR]
+Core\localization.ru.lua [AllowLoadTextLocale ruRU]
+Core\localization.zh.lua [AllowLoadTextLocale zhCN, zhTW]
+Shared\WidgetsKF.xml
+Modules\modules.xml
+Core\KRaidFade.xml
