@@ -20,6 +20,8 @@ l.INIT_FAILED = format("%s가 올바르게 초기화되지 않았습니다 (충�
 -- local required = l.YL.."*";
 -- KF START
 l.OPTION_RAIDFADE_HEADER = "공격대 투명도";
+l.OPTION_INRANGE = "사거리 내일 때 투명도";
+l.OPTION_INRANGE_TOOLTIP = l.CY.."WoW 기본값: 100%";
 l.OPTION_NOTINRANGE = "사거리 밖일 때 투명도";
 l.OPTION_NOTINRANGE_TOOLTIP = l.CY.."WoW 기본값: 55%";
 l.OPTION_NOTINCOMBAT = "비전투 시 공격대 투명도";

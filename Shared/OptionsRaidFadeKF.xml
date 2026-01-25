@@ -13,7 +13,18 @@
 					<Attribute name="paddingRight" value="30" />
 				</Attributes>
 			</CheckButton>
-
+			<Slider parentKey="AlphaInRange" inherits="KFUI_SliderWidget" minValue="0" maxValue="100" valueStep="1" stepsPerPage="1" obeyStepOnDrag="false">
+				<Size x="200" y="15" />
+				<Attributes>
+					<Attribute name="text" value="OPTION_INRANGE" />
+					<Attribute name="tooltip" value="OPTION_INRANGE_TOOLTIP" />
+					<Attribute name="format" value="%d %%" />
+					<Attribute name="default" value="100" />
+				</Attributes>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.LabelRaidFade" relativePoint="BOTTOMLEFT"><Offset x="0" y="-20" /></Anchor>
+				</Anchors>
+			</Slider>
 			<Slider parentKey="AlphaNotInRange" inherits="KFUI_SliderWidget" minValue="0" maxValue="100" valueStep="1" stepsPerPage="1" obeyStepOnDrag="false">
 				<Size x="200" y="15" />
 				<Attributes>
@@ -23,7 +34,7 @@
 					<Attribute name="default" value="55" />
 				</Attributes>
 				<Anchors>
-					<Anchor point="TOPLEFT" relativeKey="$parent.LabelRaidFade" relativePoint="BOTTOMLEFT"><Offset x="0" y="-20" /></Anchor>
+					<Anchor point="TOPLEFT" relativeKey="$parent.AlphaInRange" relativePoint="BOTTOMLEFT"><Offset x="0" y="-40" /></Anchor>
 				</Anchors>
 			</Slider>
 			<Slider parentKey="AlphaNotInCombat" inherits="KFUI_SliderWidget" minValue="0" maxValue="100" valueStep="1" stepsPerPage="1" obeyStepOnDrag="false">
@@ -35,7 +46,7 @@
 					<Attribute name="default" value="100" />
 				</Attributes>
 				<Anchors>
-					<Anchor point="TOPLEFT" relativeKey="$parent.AlphaNotInRange" relativePoint="BOTTOMLEFT"><Offset x="0" y="-20" /></Anchor>
+					<Anchor point="TOPLEFT" relativeKey="$parent.AlphaInRange" relativePoint="TOPRIGHT"><Offset x="80" y="0" /></Anchor>
 				</Anchors>
 			</Slider>
 

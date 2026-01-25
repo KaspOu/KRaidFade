@@ -11,6 +11,7 @@ local isLoaded = false;
 local defaultOptions = {
 	Version = ns.VERSION,
 
+	AlphaInRange = 100,
 	AlphaNotInRange = 55, -- 30
 	AlphaNotInCombat = 100, -- 70
 

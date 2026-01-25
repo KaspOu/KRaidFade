@@ -20,6 +20,8 @@ l.INIT_FAILED = format("%s non inizializzato correttamente (conflitto ?) !", l.V
 -- local required = l.YL.."*";
 -- KF START
 l.OPTION_RAIDFADE_HEADER = "Trasparenza del raid";
+l.OPTION_INRANGE = "Trasparenza quando in portata";
+l.OPTION_INRANGE_TOOLTIP = l.CY.."Per impostazione predefinita in Wow: 100%";
 l.OPTION_NOTINRANGE = "Trasparenza se fuori portata";
 l.OPTION_NOTINRANGE_TOOLTIP = l.CY.."Per impostazione predefinita in Wow: 55%";
 l.OPTION_NOTINCOMBAT = "Trasparenza del raid fuori combattimento";

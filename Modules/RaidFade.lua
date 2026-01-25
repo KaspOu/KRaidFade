@@ -10,7 +10,7 @@ local function getInfo(self)
 end
 
 local function isEnabled(options)
-    return options.AlphaNotInRange ~= 55 or options.AlphaNotInCombat ~= 100
+    return options.AlphaInRange ~= 100 or options.AlphaNotInRange ~= 55 or options.AlphaNotInCombat ~= 100
 end
 
 ns.IsSecretValue = issecretvalue or function(_) return false end
@@ -40,7 +40,7 @@ end
 ]]
 function ns.Hook_UpdateInRange(frame)
 	if UnitInPartyOrRaid(frame) and FrameIsCompact(frame) and not frame:IsForbidden() then
-		local inRangeAlpha = InCombatLockdown() and 1 or math.min(_G[ns.OPTIONS_NAME].AlphaNotInCombat/100, 1)
+		local inRangeAlpha = InCombatLockdown() and _G[ns.OPTIONS_NAME].AlphaInRange/100 or math.min(_G[ns.OPTIONS_NAME].AlphaNotInCombat/100, 1)
 		local outOfRangeAlpha = math.min(_G[ns.OPTIONS_NAME].AlphaNotInRange/100, 1)
 
 		local isInRange = UnitInRange(frame.displayedUnit)

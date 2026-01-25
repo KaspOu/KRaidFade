@@ -20,6 +20,8 @@ l.INIT_FAILED = format("%s неправильно инициализирован
 -- local required = l.YL.."*";
 -- KF START
 l.OPTION_RAIDFADE_HEADER = "Прозрачность рейда";
+l.OPTION_INRANGE = "Прозрачность, если в зоне действия";
+l.OPTION_INRANGE_TOOLTIP = l.CY.."По умолчанию в WoW: 100%"; -- ChatGPT
 l.OPTION_NOTINRANGE = "Прозрачность, если вне зоны действия"; -- ChatGPT
 l.OPTION_NOTINRANGE_TOOLTIP = l.CY.."По умолчанию в WoW: 55%"; -- ChatGPT
 l.OPTION_NOTINCOMBAT = "Прозрачность рейда вне боя"; -- ChatGPT

@@ -20,6 +20,8 @@ l.INIT_FAILED = format("%s nicht korrekt initialisiert (Konflikt?)!", l.VERS_TIT
 -- local required = l.YL.."*";
 -- KF START
 l.OPTION_RAIDFADE_HEADER = "Raid-Transparenz";
+l.OPTION_INRANGE = "Transparenz bei Reichweite";
+l.OPTION_INRANGE_TOOLTIP = l.CY.."Standard in Wow: 100%";
 l.OPTION_NOTINRANGE = "Transparenz bei Au\195\159er-Reichweite";
 l.OPTION_NOTINRANGE_TOOLTIP = l.CY.."Standard in Wow: 55%";
 l.OPTION_NOTINCOMBAT = "Raid-Transparenz au\195\159erhalb des Kampfes";

@@ -20,6 +20,8 @@ l.INIT_FAILED = format("%s no se inicializ\195\179 correctamente (\194\191confli
 -- local required = l.YL.."*";
 -- KF START
 l.OPTION_RAIDFADE_HEADER = "Transparencia de la banda";
+l.OPTION_INRANGE = "Transparencia cuando está en rango";
+l.OPTION_INRANGE_TOOLTIP = l.CY.."Por defecto en Wow: 100%";
 l.OPTION_NOTINRANGE = "Transparencia si est\195\161 fuera de rango";
 l.OPTION_NOTINRANGE_TOOLTIP = l.CY.."Por defecto en Wow: 55%";
 l.OPTION_NOTINCOMBAT = "Transparencia de la banda fuera de combate";

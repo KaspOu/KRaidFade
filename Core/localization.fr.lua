@@ -20,6 +20,8 @@ l.INIT_FAILED = format("%s pas charg\195\169 correctement (conflit ?) !", l.VERS
 -- local required = l.YL.."*";
 -- KF START
 l.OPTION_RAIDFADE_HEADER = "Transparence de raid";
+l.OPTION_INRANGE = "Transparence \195\160 port\195\169e";
+l.OPTION_INRANGE_TOOLTIP = l.CY.."Par d\195\169faut dans Wow : 100%";
 l.OPTION_NOTINRANGE = "Transparence si hors de port\195\169e";
 l.OPTION_NOTINRANGE_TOOLTIP = l.CY.."Par d\195\169faut dans Wow : 55%";
 l.OPTION_NOTINCOMBAT = "Transparence du raid hors de combat";
