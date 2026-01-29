@@ -1,4 +1,4 @@
-## Interface: 120000, 120001, 110205, 110207, 50502, 38000, 20505, 11508
+## Interface: 120000, 120001, 110205, 110207, 50503, 38000, 20505, 11508
 ## Title: |cff00ff00K|r Raid Fade
 ## Title-frFR: |cff00ff00K|r Raid Fade
 ## Notes:      Fade Raid frames, out of range / out of combat
