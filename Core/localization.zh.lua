@@ -18,14 +18,16 @@ l.MSG_LOADED         = format("%s 已加载并激活", l.VERS_TITLE);
 l.INIT_FAILED = format("%s 未正确加载 (冲突？)！", l.VERS_TITLE);
 
 -- local required = l.YL.."*";
--- KF START
 l.OPTION_RAIDFADE_HEADER = "团队透明度";
+-- KF START
 l.OPTION_INRANGE = "范围内透明度";
 l.OPTION_INRANGE_TOOLTIP = l.CY.."魔兽世界默认：100%";
 l.OPTION_NOTINRANGE = "范围外透明化";
 l.OPTION_NOTINRANGE_TOOLTIP = l.CY.."魔兽世界默认：55%";
 l.OPTION_NOTINCOMBAT = "脱战时团队透明化";
 l.OPTION_NOTINCOMBAT_TOOLTIP = l.CY.."魔兽世界默认：100%";
+l.OPTION_ALPHADISPELOVERLAY = "驱散覆盖层透明度"
+l.OPTION_ALPHADISPELOVERLAY_TOOLTIP = l.OPTION_NOTINCOMBAT_TOOLTIP
 -- KF END
 
 l.OPTION_RESET_OPTIONS = "重置选项";

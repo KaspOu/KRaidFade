@@ -64,6 +64,12 @@ function ns.Hook_UpdateInRange(frame)
 	end
 end
 
+function ns.Hook_UpdateHealthColor_DispelOverlay(frame)
+	if frame.DispelOverlay then
+		frame.DispelOverlay:SetAlpha(_G[ns.OPTIONS_NAME].AlphaDispelOverlay/100)
+	end
+end
+
 local function onSaveOptions(self, options)
 	if isEnabled(options) then
 
@@ -73,6 +79,9 @@ local function onSaveOptions(self, options)
 				-- DefaultCompactUnitFrameOptions.fadeOutOfRange = false; -- side effects :/
 				hooksecurefunc("CompactUnitFrame_UpdateInRange", ns.Hook_UpdateInRange);
 				hooksecurefunc("CompactUnitFrame_UpdateHealthColor", ns.Hook_UpdateInRange);
+			end
+			if options.AlphaDispelOverlay ~= 100 then
+				hooksecurefunc("CompactUnitFrame_UpdateHealthColor", ns.Hook_UpdateHealthColor_DispelOverlay);
 			end
 
 			-- -- Direct preview options

@@ -18,14 +18,16 @@ l.MSG_LOADED         = format("%s geladen und aktiv", l.VERS_TITLE);
 l.INIT_FAILED = format("%s nicht korrekt initialisiert (Konflikt?)!", l.VERS_TITLE);
 
 -- local required = l.YL.."*";
--- KF START
 l.OPTION_RAIDFADE_HEADER = "Raid-Transparenz";
+-- KF START
 l.OPTION_INRANGE = "Transparenz bei Reichweite";
 l.OPTION_INRANGE_TOOLTIP = l.CY.."Standard in Wow: 100%";
 l.OPTION_NOTINRANGE = "Transparenz bei Au\195\159er-Reichweite";
 l.OPTION_NOTINRANGE_TOOLTIP = l.CY.."Standard in Wow: 55%";
 l.OPTION_NOTINCOMBAT = "Raid-Transparenz au\195\159erhalb des Kampfes";
 l.OPTION_NOTINCOMBAT_TOOLTIP = l.CY.."Standard in Wow: 100%";
+l.OPTION_ALPHADISPELOVERLAY = "Transparenz des Dispel-Overlays"
+l.OPTION_ALPHADISPELOVERLAY_TOOLTIP = l.OPTION_NOTINCOMBAT_TOOLTIP
 -- KF END
 
 l.OPTION_RESET_OPTIONS = "Profil zur\195\188cksetzen";

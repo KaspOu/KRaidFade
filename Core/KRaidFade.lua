@@ -14,6 +14,7 @@ local defaultOptions = {
 	AlphaInRange = 100,
 	AlphaNotInRange = 55, -- 30
 	AlphaNotInCombat = 100, -- 70
+	AlphaDispelOverlay = 100,
 
 	ShowMsgNormal = true,
 	ShowMsgWarning = true,

@@ -18,14 +18,16 @@ l.MSG_LOADED         = format("%s loaded and active", l.VERS_TITLE);
 l.INIT_FAILED = format("%s not initialized correctly (conflict?)!", l.VERS_TITLE);
 
 -- local required = l.YL.."*";
--- KF START
 l.OPTION_RAIDFADE_HEADER = "Raid transparency";
+-- KF START
 l.OPTION_INRANGE = "Transparency when in range";
 l.OPTION_INRANGE_TOOLTIP = l.CY.."Wow default: 100%";
 l.OPTION_NOTINRANGE = "Transparency when out of range";
 l.OPTION_NOTINRANGE_TOOLTIP = l.CY.."Wow default: 55%";
 l.OPTION_NOTINCOMBAT = "Raid transparency out of combat";
 l.OPTION_NOTINCOMBAT_TOOLTIP = l.CY.."Wow default: 100%";
+l.OPTION_ALPHADISPELOVERLAY = "Dispel Overlay transparency"
+l.OPTION_ALPHADISPELOVERLAY_TOOLTIP = l.OPTION_NOTINCOMBAT_TOOLTIP
 -- KF END
 
 l.OPTION_RESET_OPTIONS = "Reset options";

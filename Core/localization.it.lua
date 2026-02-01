@@ -18,14 +18,16 @@ l.MSG_LOADED         = format("%s caricato e attivo", l.VERS_TITLE);
 l.INIT_FAILED = format("%s non inizializzato correttamente (conflitto ?) !", l.VERS_TITLE);
 
 -- local required = l.YL.."*";
--- KF START
 l.OPTION_RAIDFADE_HEADER = "Trasparenza del raid";
+-- KF START
 l.OPTION_INRANGE = "Trasparenza quando in portata";
 l.OPTION_INRANGE_TOOLTIP = l.CY.."Per impostazione predefinita in Wow: 100%";
 l.OPTION_NOTINRANGE = "Trasparenza se fuori portata";
 l.OPTION_NOTINRANGE_TOOLTIP = l.CY.."Per impostazione predefinita in Wow: 55%";
 l.OPTION_NOTINCOMBAT = "Trasparenza del raid fuori combattimento";
 l.OPTION_NOTINCOMBAT_TOOLTIP = l.CY.."Per impostazione predefinita in Wow: 100%";
+l.OPTION_ALPHADISPELOVERLAY = "Trasparenza indicatore dissoluzione"
+l.OPTION_ALPHADISPELOVERLAY_TOOLTIP = l.OPTION_NOTINCOMBAT_TOOLTIP
 -- KF END
 
 l.OPTION_RESET_OPTIONS = "Reimposta opzioni";

@@ -18,14 +18,16 @@ l.MSG_LOADED         = format("%s iniciado e ativo", l.VERS_TITLE);
 l.INIT_FAILED = format("%s n\195\163o carregado corretamente (conflito ?) !", l.VERS_TITLE);
 
 -- local required = l.YL.."*";
--- KF START
 l.OPTION_RAIDFADE_HEADER = "Transpar\195\170ncia do raide";
+-- KF START
 l.OPTION_INRANGE = "Transpar\195\170ncia quando em alcance";
 l.OPTION_INRANGE_TOOLTIP = l.CY.."Padr\195\163o no Wow: 100%";
 l.OPTION_NOTINRANGE = "Transpar\195\170ncia se fora de alcance";
 l.OPTION_NOTINRANGE_TOOLTIP = l.CY.."Padr\195\163o no Wow: 55%";
 l.OPTION_NOTINCOMBAT = "Transpar\195\170ncia do raide fora de combate";
 l.OPTION_NOTINCOMBAT_TOOLTIP = l.CY.."Padr\195\163o no Wow: 100%";
+l.OPTION_ALPHADISPELOVERLAY = "Transpar\195\170ncia do Overlay de Dissipa\195\167\195\163o"
+l.OPTION_ALPHADISPELOVERLAY_TOOLTIP = l.OPTION_NOTINCOMBAT_TOOLTIP
 -- KF END
 
 l.OPTION_RESET_OPTIONS = "Redefinir o perfil";

@@ -50,6 +50,19 @@
 				</Anchors>
 			</Slider>
 
+			<Slider parentKey="AlphaDispelOverlay" inherits="KFUI_SliderWidget" minValue="0" maxValue="100" valueStep="1" stepsPerPage="1" obeyStepOnDrag="false">
+				<Size x="200" y="15" />
+				<Attributes>
+					<Attribute name="text" value="OPTION_ALPHADISPELOVERLAY" />
+					<Attribute name="tooltip" value="OPTION_ALPHADISPELOVERLAY_TOOLTIP" />
+					<Attribute name="format" value="%d %%" />
+					<Attribute name="default" value="100" />
+				</Attributes>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.AlphaNotInRange" relativePoint="BOTTOMLEFT"><Offset x="0" y="-60" /></Anchor>
+				</Anchors>
+			</Slider>
+
 		</Frames>
 	</Frame>
 </Ui>

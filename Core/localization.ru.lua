@@ -18,14 +18,16 @@ l.MSG_LOADED         = format("%s загружен и активен", l.VERS_TI
 l.INIT_FAILED = format("%s неправильно инициализирован (конфликт?)!", l.VERS_TITLE);
 
 -- local required = l.YL.."*";
--- KF START
 l.OPTION_RAIDFADE_HEADER = "Прозрачность рейда";
+-- KF START
 l.OPTION_INRANGE = "Прозрачность, если в зоне действия";
 l.OPTION_INRANGE_TOOLTIP = l.CY.."По умолчанию в WoW: 100%"; -- ChatGPT
 l.OPTION_NOTINRANGE = "Прозрачность, если вне зоны действия"; -- ChatGPT
 l.OPTION_NOTINRANGE_TOOLTIP = l.CY.."По умолчанию в WoW: 55%"; -- ChatGPT
 l.OPTION_NOTINCOMBAT = "Прозрачность рейда вне боя"; -- ChatGPT
 l.OPTION_NOTINCOMBAT_TOOLTIP = l.CY.."По умолчанию в WoW: 100%"; -- ChatGPT
+l.OPTION_ALPHADISPELOVERLAY = "Прозрачность наложения рассеивания" -- ChatGPT
+l.OPTION_ALPHADISPELOVERLAY_TOOLTIP = l.OPTION_NOTINCOMBAT_TOOLTIP
 -- KF END
 
 l.OPTION_RESET_OPTIONS = "Сбросить настройки";

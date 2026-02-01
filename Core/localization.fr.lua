@@ -18,14 +18,16 @@ l.MSG_LOADED         = format("%s lanc\195\169 et actif", l.VERS_TITLE);
 l.INIT_FAILED = format("%s pas charg\195\169 correctement (conflit ?) !", l.VERS_TITLE);
 
 -- local required = l.YL.."*";
--- KF START
 l.OPTION_RAIDFADE_HEADER = "Transparence de raid";
+-- KF START
 l.OPTION_INRANGE = "Transparence \195\160 port\195\169e";
 l.OPTION_INRANGE_TOOLTIP = l.CY.."Par d\195\169faut dans Wow : 100%";
 l.OPTION_NOTINRANGE = "Transparence si hors de port\195\169e";
 l.OPTION_NOTINRANGE_TOOLTIP = l.CY.."Par d\195\169faut dans Wow : 55%";
 l.OPTION_NOTINCOMBAT = "Transparence du raid hors de combat";
 l.OPTION_NOTINCOMBAT_TOOLTIP = l.CY.."Par d\195\169faut dans Wow : 100%";
+l.OPTION_ALPHADISPELOVERLAY = "Transparence de l'indicateur de dissipations"
+l.OPTION_ALPHADISPELOVERLAY_TOOLTIP = l.OPTION_NOTINCOMBAT_TOOLTIP
 -- KF END
 
 l.OPTION_RESET_OPTIONS = "R\195\169initialiser le profil";

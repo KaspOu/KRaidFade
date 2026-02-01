@@ -1,4 +1,4 @@
-## Interface: 120000, 120001, 110205, 110207, 50503, 38000, 20505, 11508
+## Interface: 120000, 120001, 50503, 38000, 20505, 11508
 ## Title: |cff00ff00K|r Raid Fade
 ## Title-frFR: |cff00ff00K|r Raid Fade
 ## Notes:      Fade Raid frames, out of range / out of combat
@@ -13,7 +13,7 @@
 ## Notes-zhCN: 改变团队框架的透明度，超出范围 / 脱离战斗。
 ## Notes-zhTW: 改變團隊框架的透明度，超出範圍 / 脫離戰鬥。
 
-## Version: 12.0.001
+## Version: 12.0.004
 ## Author: Kallye of Elune
 ## LoadSavedVariablesFirst: 1
 ## SavedVariables: KRaidFadeOptions
