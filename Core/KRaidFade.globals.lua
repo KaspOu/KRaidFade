@@ -17,7 +17,7 @@ ns.TITLE = format("%s|TInterface/PVPFrame/Icons/prestige-icon-8-3:16|t", ns.TITL
 --@end-do-not-package@
 
 ns.IS_RETAIL = (WOW_PROJECT_ID == (WOW_PROJECT_MAINLINE or 1));
-ns.DEFAULT_RAIDICON_SIZE = 12;
+ns.DEFAULT_ALPHA_OUTOFRANGE = issecretvalue and  30 or 55;
 
 
 -- Prepare I18N, with chat colors
@@ -25,6 +25,7 @@ ns.I18N = {};
 local l = ns.I18N;
 local function BCC(r, g, b) return string.format("|cff%02x%02x%02x", (r*255), (g*255), (b*255)); end
 
+l.DEFAULT_ALPHA_OUTOFRANGE = ns.DEFAULT_ALPHA_OUTOFRANGE
 l.BL  = BCC(0.1, 0.1, 1.0);
 l.BLD = BCC(0.0, 0.0, 0.7);
 l.BLL = BCC(0.5, 0.8, 1.0);

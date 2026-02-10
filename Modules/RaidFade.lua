@@ -10,7 +10,7 @@ local function getInfo(self)
 end
 
 local function isEnabled(options)
-    return options.AlphaInRange ~= 100 or options.AlphaNotInRange ~= 55 or options.AlphaNotInCombat ~= 100
+    return options.AlphaInRange ~= 100 or options.AlphaNotInRange ~= ns.DEFAULT_ALPHA_OUTOFRANGE or options.AlphaNotInCombat ~= 100
 end
 
 ns.IsSecretValue = issecretvalue or function(_) return false end
@@ -36,7 +36,7 @@ end
 ! Managing Alpha depending on range
 - Alpha not in range
 - then alpha out of combat
-- Disabled if alpha values are equals to blizzard default (100% / 55%)
+- Disabled if alpha values are equals to blizzard default (100% / ns.DEFAULT_ALPHA_OUTOFRANGE%)
 ]]
 function ns.Hook_UpdateInRange(frame)
 	if UnitInPartyOrRaid(frame) and FrameIsCompact(frame) and not frame:IsForbidden() then
@@ -75,7 +75,7 @@ local function onSaveOptions(self, options)
 
 		if not ns._RaidFadeHooked then
 			ns._RaidFadeHooked = true
-			if options.AlphaNotInRange ~= 55 or options.AlphaNotInCombat ~= 100 then
+			if options.AlphaNotInRange ~= ns.DEFAULT_ALPHA_OUTOFRANGE or options.AlphaNotInCombat ~= 100 then
 				-- DefaultCompactUnitFrameOptions.fadeOutOfRange = false; -- side effects :/
 				hooksecurefunc("CompactUnitFrame_UpdateInRange", ns.Hook_UpdateInRange);
 				hooksecurefunc("CompactUnitFrame_UpdateHealthColor", ns.Hook_UpdateInRange);

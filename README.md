@@ -2,8 +2,10 @@
 
 **Fades the Blizzard Raid Frames **
 So you can focus on who can be healed
+ - Alpha of raid units in range (combat)
  - Alpha of raid units out of range
  - Alpha of raid units out of combat
+ - Alpha of Dispel overlay (Midnight only)
 
 
 Commands:
