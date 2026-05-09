@@ -17,7 +17,7 @@ ns.TITLE = format("%s|TInterface/PVPFrame/Icons/prestige-icon-8-3:16|t", ns.TITL
 --@end-do-not-package@
 
 ns.IS_RETAIL = (WOW_PROJECT_ID == (WOW_PROJECT_MAINLINE or 1));
-ns.DEFAULT_ALPHA_OUTOFRANGE = issecretvalue and  30 or 55;
+ns.DEFAULT_ALPHA_OUTOFRANGE = issecretvalue and  50 or 55;
 
 
 -- Prepare I18N, with chat colors

@@ -12,7 +12,7 @@ local defaultOptions = {
 	Version = ns.VERSION,
 
 	AlphaInRange = 100,
-	AlphaNotInRange = 55, -- 30
+	AlphaNotInRange = 55, -- 50
 	AlphaNotInCombat = 100, -- 70
 	AlphaDispelOverlay = 100,
 
