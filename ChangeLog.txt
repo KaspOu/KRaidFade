@@ -1,3 +1,6 @@
+v12.0.503
+- Classic: fixed range detection on player
+
 v12.0.502
 - Default Midnight Out of Combat transparency= 50%
 
