@@ -32,6 +32,7 @@ local function FrameIsCompact(frame)
 	return getName ~=nil and strsub(getName, 0, 7) == "Compact"
 end
 
+
 --[[
 ! Managing Alpha depending on range
 - Alpha not in range
@@ -44,7 +45,7 @@ function ns.Hook_UpdateInRange(frame)
 		local outOfRangeAlpha = math.min(_G[ns.OPTIONS_NAME].AlphaNotInRange/100, 1)
 
 		local isInRange = UnitInRange(frame.displayedUnit)
-		if C_Spell.IsSpellInRange(1229376, frame.displayedUnit) then
+		if C_Spell.IsSpellInRange(1229376, frame.displayedUnit) then -- one click button
 		-- if UnitIsUnit(frame.displayedUnit, "player") then
 			isInRange = true
 		end
@@ -73,7 +74,7 @@ function ns.Hook_UpdateHealthColor_DispelOverlay(frame)
 	end
 end
 
-local function onSaveOptions(self, options)
+local function onOptionsChanged(self, options)
 	if isEnabled(options) then
 
 		if not ns._RaidFadeHooked then
@@ -98,15 +99,16 @@ local function onSaveOptions(self, options)
 		else
 
 		end
+		ns.ApplyFuncToRaidFrames(ns.Hook_UpdateInRange)
 	end
 end
 
 local function onInit(self, options)
-    onSaveOptions(self, options);
+    onOptionsChanged(self, options);
 end
 local module = ns.Module:new(onInit, "RaidFade");
 
-module:SetOnSaveOptions(onSaveOptions);
+module:SetOnOptionsChanged(onOptionsChanged);
 module:SetGetInfo(getInfo);
 
 --@do-not-package@
