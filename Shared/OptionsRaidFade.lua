@@ -5,6 +5,7 @@ if ns.CONFLICT then return; end
 
 
 local function ManageRaidFadeOptions()
+    local HealthOption = false
     -- local activeCheckbox = ns.FindControl("ActiveRaidFade")
     -- local headingLabel = ns.FindControl("LabelRaidFade")
     -- local hideDisabledModules = ns.FindControl("HideDisabledModules")
