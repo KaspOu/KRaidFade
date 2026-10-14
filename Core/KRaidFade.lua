@@ -31,11 +31,7 @@ local function SLASH_command(msgIn)
 	if msgIn == "reset" then
 		StaticPopup_Show(ns.ADDON_NAME.."_CONFIRM_RESET")
 	else
-		if Settings then
-			Settings.OpenToCategory(ns.CATEGORY_ID);
-		else
-			InterfaceOptionsFrame_OpenToCategory(ns.TITLE);
-		end
+		Settings.OpenToCategory(ns.CATEGORY_ID);
 	end
 end
 
@@ -110,9 +106,6 @@ local refreshOptions = function()
 	ns.RefreshOptions(defaultOptions, true);
 end
 function ns.InterfaceOptions_AddCategory(frame, addOn, position)
-	if not Settings or not Settings.RegisterCanvasLayoutSubcategory then
-		return InterfaceOptions_AddCategory(frame, addOn, position)
-	end
     -- cancel is no longer a default option. May add menu extension for this.
     frame.OnCommit = frame.okay;
     frame.OnDefault = frame.default;
