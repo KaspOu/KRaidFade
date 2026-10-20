@@ -17,7 +17,7 @@ l.MSG_LOADED         = format("%s cargado y activo", l.VERS_TITLE);
 
 l.INIT_FAILED = format("%s no se inicializ\195\179 correctamente (\194\191conflicto?)!", l.VERS_TITLE);
 
--- local required = l.YL.."*";
+local required = l.YL.."*";
 l.OPTION_RAIDFADE_HEADER = "Transparencia de la banda";
 -- KF START
 l.OPTION_INRANGE = "Transparencia cuando está en rango";
@@ -36,4 +36,6 @@ l.OPTIONS_ASTERIX = l.YL.."*|r"..l.WH..": Opci\195\179nes que requieren recargar
 l.OPTION_SHOWMSGNORMAL = l.GYL.."Mostrar mensajes";
 l.OPTION_SHOWMSGWARNING = l.GYL.."Mostrar advertencias";
 l.OPTION_SHOWMSGERR = l.GYL.."Mostrar errores";
+l.OPTION_COMPARTMENT_FILTER = "Mostrar en el Filtro de Compartimentos"..required;
+l.OPTION_COMPARTMENT_FILTER_TOOLTIP = "En la lista de addons en la parte superior derecha";
 l.OPTION_WHATSNEW = "Novedades";

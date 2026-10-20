@@ -17,7 +17,7 @@ l.MSG_LOADED         = format("%s loaded and active", l.VERS_TITLE);
 
 l.INIT_FAILED = format("%s not initialized correctly (conflict?)!", l.VERS_TITLE);
 
--- local required = l.YL.."*";
+local required = l.YL.."*";
 l.OPTION_RAIDFADE_HEADER = "Raid transparency";
 -- KF START
 l.OPTION_INRANGE = "Transparency when in range";
@@ -36,4 +36,6 @@ l.OPTIONS_ASTERIX = l.YL.."*|r"..l.WH..": Options requiring reloading";
 l.OPTION_SHOWMSGNORMAL = l.GYL.."Display messages";
 l.OPTION_SHOWMSGWARNING = l.GYL.."Display warnings";
 l.OPTION_SHOWMSGERR = l.GYL.."Display errors";
+l.OPTION_COMPARTMENT_FILTER = "Display in the Compartment Filter"..required;
+l.OPTION_COMPARTMENT_FILTER_TOOLTIP = "In addons list on top right";
 l.OPTION_WHATSNEW = "What's new";

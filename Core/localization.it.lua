@@ -17,7 +17,7 @@ l.MSG_LOADED         = format("%s caricato e attivo", l.VERS_TITLE);
 
 l.INIT_FAILED = format("%s non inizializzato correttamente (conflitto ?) !", l.VERS_TITLE);
 
--- local required = l.YL.."*";
+local required = l.YL.."*";
 l.OPTION_RAIDFADE_HEADER = "Trasparenza del raid";
 -- KF START
 l.OPTION_INRANGE = "Trasparenza quando in portata";
@@ -36,4 +36,6 @@ l.OPTIONS_ASTERIX = l.YL.."*|r"..l.WH..": Opzioni che richiedono un ricaricament
 l.OPTION_SHOWMSGNORMAL = l.GYL.."Mostra messaggi";
 l.OPTION_SHOWMSGWARNING = l.GYL.."Mostra avvisi";
 l.OPTION_SHOWMSGERR = l.GYL.."Mostra errori";
+l.OPTION_COMPARTMENT_FILTER = "Mostra nel Compartment Filter"..required;
+l.OPTION_COMPARTMENT_FILTER_TOOLTIP = "Nella lista degli addon in alto a destra";
 l.OPTION_WHATSNEW = "Novit\195\160";

@@ -17,7 +17,7 @@ l.MSG_LOADED         = format("%s 로드 및 활성화됨", l.VERS_TITLE);
 
 l.INIT_FAILED = format("%s가 올바르게 초기화되지 않았습니다 (충돌?).", l.VERS_TITLE);
 
--- local required = l.YL.."*";
+local required = l.YL.."*";
 l.OPTION_RAIDFADE_HEADER = "공격대 투명도";
 -- KF START
 l.OPTION_INRANGE = "사거리 내일 때 투명도";
@@ -36,4 +36,6 @@ l.OPTIONS_ASTERIX = l.YL.."*|r"..l.WH..": 다시 로드해야 하는 옵션";
 l.OPTION_SHOWMSGNORMAL = l.GYL.."메시지 표시";
 l.OPTION_SHOWMSGWARNING = l.GYL.."경고 표시";
 l.OPTION_SHOWMSGERR = l.GYL.."오류 표시";
+l.OPTION_COMPARTMENT_FILTER = "칸 필터에 표시"..required;
+l.OPTION_COMPARTMENT_FILTER_TOOLTIP = "오른쪽 상단 애드온 목록에";
 l.OPTION_WHATSNEW = "새로운 기능";

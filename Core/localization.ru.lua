@@ -17,7 +17,7 @@ l.MSG_LOADED         = format("%s загружен и активен", l.VERS_TI
 
 l.INIT_FAILED = format("%s неправильно инициализирован (конфликт?)!", l.VERS_TITLE);
 
--- local required = l.YL.."*";
+local required = l.YL.."*";
 l.OPTION_RAIDFADE_HEADER = "Прозрачность рейда";
 -- KF START
 l.OPTION_INRANGE = "Прозрачность, если в зоне действия";
@@ -36,4 +36,6 @@ l.OPTIONS_ASTERIX = l.YL.."*|r"..l.WH..": Настройки, требующие
 l.OPTION_SHOWMSGNORMAL = l.GYL.."Отображать сообщения";
 l.OPTION_SHOWMSGWARNING = l.GYL.."Отображать предупреждения";
 l.OPTION_SHOWMSGERR = l.GYL.."Отображать ошибки";
+l.OPTION_COMPARTMENT_FILTER = "Показывать в фильтре отсеков"..required; -- ChatGPT
+l.OPTION_COMPARTMENT_FILTER_TOOLTIP = "В списке дополнений в правом верхнем углу"; -- ChatGPT
 l.OPTION_WHATSNEW = "Что нового";
