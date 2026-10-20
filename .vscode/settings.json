@@ -80,6 +80,8 @@
         "CompactUnitFrame_UpdateHealthColor",
         "KRF_TITLE",
         "issecretvalue",
-        "OpacitySliderFrame"
+        "OpacitySliderFrame",
+        "K_SHARED_UI",
+        "AddonCompartmentFrame"
     ]
 }
