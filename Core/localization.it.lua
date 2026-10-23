@@ -38,4 +38,4 @@ l.OPTION_SHOWMSGWARNING = l.GYL.."Mostra avvisi";
 l.OPTION_SHOWMSGERR = l.GYL.."Mostra errori";
 l.OPTION_COMPARTMENT_FILTER = "Mostra nel Compartment Filter"..required;
 l.OPTION_COMPARTMENT_FILTER_TOOLTIP = "Nella lista degli addon in alto a destra";
-l.OPTION_WHATSNEW = "Novit\195\160";
+l.OPTION_WHATSNEW = "Novità";
